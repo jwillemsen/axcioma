@@ -61,7 +61,7 @@ module BRIX11
           # generate mpc config file
           BRIX11.show_msg("Creating #{mwccfg}")
           begin
-            mwccfg_io = cfg.dryrun? ? STDOUT : File.new(mwccfg, 'wb:ASCII-8BIT')
+            mwccfg_io = cfg.dryrun? ? STDOUT : File.new(mwccfg, 'w:ASCII')
             mwccfg_io.puts("//----- #{MWCCFG} -----") if cfg.dryrun?
             mwccfg_io.puts('workspace {')
             mwcinc.each {|p| mwccfg_io.puts("  #{p}") }
