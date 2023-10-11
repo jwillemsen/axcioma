@@ -18,7 +18,8 @@
     "debug=0",
     "inline=1",
     "optimize=1",
-    "boost=0"
+    "boost=0",
+    "std=c++17"
   ],
   "gnumake_post": []
 }
