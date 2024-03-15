@@ -114,6 +114,7 @@ module BRIX11
                                             }.gsub(/^\s+/, ''),
                                           gnumake_include: 'platform_linux.GNU',
                                           gnumake_prelude: %Q{
+                                              c++17=1
                                               debug=0
                                               inline=1
                                               optimize=1

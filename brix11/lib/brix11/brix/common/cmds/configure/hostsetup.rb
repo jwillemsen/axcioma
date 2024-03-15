@@ -121,6 +121,7 @@ module BRIX11
                 platform_macros_io.puts("#----- HOST #{ACE_Config::PLATFORM_MACROS} -----") if cfg.dryrun?
                 # generate default platform macros
                 platform_macros_io << %Q{
+                  c++17=1
                   debug=0
                   inline=1
                   optimize=1
