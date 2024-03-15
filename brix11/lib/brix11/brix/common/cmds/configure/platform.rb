@@ -49,6 +49,7 @@ module BRIX11
                                                     #define ACE_MONITOR_FRAMEWORK 0
                                                   }.gsub(/^\s+/, ''),
                                                 gnumake_prelude: %Q{
+                                                    c++17=1
                                                     debug=0
                                                     inline=1
                                                     optimize=1
